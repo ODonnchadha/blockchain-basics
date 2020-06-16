@@ -1,4 +1,4 @@
-# Introduction & Definitions
+## Introduction & Definitions
 - Overview:
 
 - Definitions:
@@ -20,12 +20,19 @@
     6. P2P: And server-based versus peer-to-peer (clients interact with each other.)
 
 
-# Blockchain Basics
+## Blockchain Basics
 - What is Blockchain and how does it work?
-    1. Blockchain is a decentralized ledger tracking digital assets on P2P networks. e.g.: a large book.
+    1. Blockchain is a decentralized ledger which tracks digital assets on P2P networks. e.g.: a large book.
         - Blocks in a chain refer to previous blocks, like page numbers in a book.
+        - e.g.: Book Analogy: Book = Blockchain. Page = Block. Page entry = Blockchain transaction.
+        1. Easy to detect if a page/block has been removed or deleted.
+        2. Easy to arrange the pages/blocks and identify suspicious activity.
+        3. Impossible to temper a previous entry in the ledger without someone noticing it.
+    2. Each block is built on top of the recent block and use its content/signature and nonce.
+    3. Building a block and adding it in the blockchain is the task of the miner nodes (optional.)
+    4. In public blockchain it is computationally difficult to add a block to prevent attacks.
+    5. Miners try to guess a nonce in such a way that if it gets crunched with the most recent block's fingerprint then it will create a new fingerprint which will be less that the last/most recent block in the blokchain.
 
 
-
-# Summary
+## Summary
 
