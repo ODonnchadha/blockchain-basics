@@ -1,8 +1,10 @@
 ## Introduction & Definitions
+- This was a horse^&#$ class and a complete waste of time.
+
 - Overview:
 
 - Definitions:
-    1. Blockchain: COnsensus-based secure decentralized public database which stores information immutabaly over a peer-to-peer network.
+    1. Blockchain: Consensus-based secure decentralized public database which stores information immutabaly over a peer-to-peer network.
         - Public or private.
         - Data recorded via consensus-based algorithms.
         - Uses cryptography. 
@@ -62,6 +64,54 @@
     1. Alice -> $10.00 -> Bob. Within a few seconds.
 
 - Consensus: How the conflicts are being resolved.
+    1. An example of a conflict:
+    - All nodes have synchronized the Blockchain and are at block 100.
+    - Three miers have mined the new block 101 at nearly the same time.
+    - All of their block has a different signature and, hence, are not exactly the same.
+    - Let's say the new blocks are 101a, 101b, and 101c.
+    - Which is the final new block? How can we reolve this conflict?
+    - (In Bitcoin the problem is worth 25BTC or $18,735 as of today. Costly problem, yes?)
+    2. Longest chain rule:
+    - In public blockchains conflicts are being resolved by longest chain rule.
+    - So, the block with the longest chain, the amount of blocks built off of that block version, will win.
+    3. How about private?
+    - Make a miner as an arbitrator or trusted.
+
+- When to use a Blockchain:
+    1. When you want to store something immutably.
+    2. When you keep adding but older one does not change.
+    - e.g.: Court judgements. Health records.
+    3. Decentralization. When you want to deentralize the control.
+    - e.g.: User identity management system.
+    4. Proof of ownership. When you want to prove that you are the ownder of the digital document.
+
+- Why Blockchain is more secure:
+    1. Nodes follow longest chain rule. Mr. X alters block number 23. Nodes follow longest chain rule.
+    - So, the smaller chain of 0 - 23 is unchosen because 0 - 100 exists.
+    2. Computationally expensive. And time-consuming to create a block. It's called "mining."
+    3. Decentralized nature: There are many honest nodes in the network.
+    - Faking a transaction will be expensive and ultimately rejected by honest upcoming blocks.
+
+- How Blockchain can be hacked:
+    1. 51% attack. Often considered a very large flaw.
+    - If a single entity contrinuted the majority of the network's mining hashrate, it would have the power to manipulate the public ledger.
+    - In theory, this could happen. Blockchain is publically open. COnfidence in the currency would be lost.
+    - Potential damage:
+        1. Decline in pricing. Prevention of transaction confirmation.
+        2. Reverse transaction resulting in double spent. And prevent miners to find blocks.
+    2. Eclipse attack. Cripple a node in such a way that it cannot talk to other nodes in the network.
+    - If there are three nodes with 30%, 30%, and 40% network hash power and node 2 is crippled in such a way that it cannot talk to node 1 then node 3 can control Blockchain's public ledger. 
+
+- Private Blockchain. Can I set up my very own?:
+    1. Yes. Yes you can.
+        - It is fully owned by you. You are responsible for its security.
+        - e.g.: Ethereum. Custom Genesis file. Custom data directory. Custom NetworkId. And disable node discovery.
+        - e.g.: Multichain is the easiest. Open source. Great features like permissions, data streams, etc...
+        - e.g.: Hyperledger Fabric. No concept of mining or cryptocurrency. IBM is a major contributor.
+        - e.g.: Openchain. Open-source distributed ledger technology. 
+            1. Suited to manage digital assets in a robust, secure, and scalable manner.
+            2. Every transaction is digitally signed.
+        - e.g.: Bitcoin core.
 
 ## Summary
-
+- What's next? Yawn.
